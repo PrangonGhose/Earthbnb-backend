@@ -18,11 +18,6 @@ class HousesController < ApplicationController
     end
   end
 
-  def delete_page
-    houses = House.all
-    render json: houses
-  end
-
   def destroy
     house = House.find(params[:id])
     house.destroy

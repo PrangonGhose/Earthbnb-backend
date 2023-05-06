@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  resources :houses do
-    get 'delete_page', on: :collection
-  end
-  resources :reservations
-  resources :users
+  resources :houses, only: %i[index show create destroy]
+  resources :reservations, only: %i[index create]
+  resources :users, only: %i[index create]
 end
