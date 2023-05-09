@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  address: MyText
+  rooms: 1
+  beds: 1
+  picture: MyText
+  price_by_night: 9.99
+  description: MyText
+
+two:
+  address: MyText
+  rooms: 1
+  beds: 1
+  picture: MyText
+  price_by_night: 9.99
+  description: MyText
