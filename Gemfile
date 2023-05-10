@@ -48,5 +48,5 @@ end
 
 group :test do
   gem 'rspec-rails'
-  gem 'rswag'
 end
+  gem 'rswag'
