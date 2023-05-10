@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       render json: {
         logged_in: false,
         status: 401,
-        errors: ['No such user, please try again']
+        errors: {username: ['No such user, please try again'] }
       }
     end
   end

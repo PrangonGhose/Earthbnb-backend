@@ -5,8 +5,15 @@ class HousesController < ApplicationController
   end
 
   def show
-    house = House.find(params[:id])
-    render json: house.as_json(include: { reservations: { only: %i[id starting_date ending_date] } })
+    house = House.find_by(id: params[:id])
+    if (house)
+      render json: house.as_json(include: { reservations: { only: %i[id starting_date ending_date] } })
+    else
+      render json: {
+        status: 404,
+        errors: ['House does not exist']
+      }
+    end
   end
 
   def create
@@ -14,7 +21,10 @@ class HousesController < ApplicationController
     if house.save
       render json: house, status: :created
     else
-      render json: house.errors, status: :unprocessable_entity
+      render json: {
+        status: 404,
+        errors: house.errors
+      }
     end
   end
 
