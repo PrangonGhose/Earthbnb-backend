@@ -2,13 +2,16 @@ class ReservationsController < ApplicationController
   def index
     @user = User.find_by(username: params[:username])
     reservations = @user.reservations
-    render json: reservations
+    render json: reservations.as_json(include: { house: { only: %i[house_name] } })
   end
 
   def create
     reservation = Reservation.new(reservation_params)
     if reservation.save
-      render json: reservation, status: :created
+      render json: {
+        status: :created,
+        json: reservation
+      }
     else
       render json: {
         status: :unprocessable_entity,
