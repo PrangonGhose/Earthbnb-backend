@@ -21,6 +21,7 @@
 - [Install](#install)
 - [Usage](#usage)
 - [Run tests](#run-tests)
+- [📃 Kanban Board](#kanban-board)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -76,10 +77,13 @@ To clone the repository in local environment try following steps.
 - [x] A code editor like Visual Studio Code with Git, Ruby, and Gem.
 
 You can check if Git is installed by running the following command in the terminal.
+```
 $ git --version
-
+```
 Likewise for `Ruby` and `gem` for package installation.
+```
 $ ruby --version && gem --version
+```
 **Note: This project is built with `Ruby` version 3.1.3**
 ### Setup
 
@@ -88,17 +92,21 @@ Clone the repository using [this link](https://github.com/PrangonGhose/Earthbnb_
 ### Install
 
 In the terminal, go to your file directory and run this command.
-
+```
 $ git clone https://github.com/PrangonGhose/Earthbnb_backend
+```
 ### Get into development
 
 In the terminal, run these commands to get into development.
+```
 $ cd Earthbnb_backend
 
 $ bundle init
 
 $ bundle install (install dependencies)
+```
 **Note: You might need to update [database.yml](./config/database.yml) for development and testing environments with necessary username and password for your database in their respective positions.**
+```
 $ rails db:create
 
 $ rails db:migrate
@@ -106,19 +114,27 @@ $ rails db:migrate
 $ rails db:seed
 
 $ rails server
+```
 ### Usage <a href="usage" name="usage"></a>
 
 This website is applicable for both mobile and desktop version.
 
 ### Run Test <a href="run-test" name="run-tests"></a>
-
+```
 $ rails db:create RAILS_ENV=test
 
 $ rails db:migrate RAILS_ENV=test
 
 $ rails rswag
-
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+ <!-- Kanban Board -->
+ 
+ ## 📃 Kanban Board <a name="kanban-board"></a>
+
+ The Kanban Board made for this project can be found [here](https://github.com/users/PrangonGhose/projects/2/views/2). The initial state of the Kanban Board can be found [here](https://user-images.githubusercontent.com/64170307/236311639-7e0ff546-f4e3-4308-ad24-4dc9de96e98c.png). There are four members in our team. Their details can be found in the [authors section](#authors).
+ <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
