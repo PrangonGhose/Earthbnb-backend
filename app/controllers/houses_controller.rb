@@ -5,7 +5,7 @@ class HousesController < ApplicationController
   end
 
   def show
-    house = House.find_by(id: params[:id])
+    house = House.where(id: params[:id])
     if house
       render json: house.as_json(include: { reservations: { only: %i[id starting_date ending_date] } })
     else
