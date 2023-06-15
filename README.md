@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<h1><b>EARTHBNB</b></h1>
+<img src='./logo-w-background.svg' style="border-radius: 200px;" />
 
 </div>
 
