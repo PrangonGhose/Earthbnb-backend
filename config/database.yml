@@ -84,6 +84,4 @@ test:
 #
 production:
   <<: *default
-  database: Earthbnb_backend_production
-  username: Earthbnb_backend
-  password: <%= ENV["EARTHBNB_BACKEND_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
