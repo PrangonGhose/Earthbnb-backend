@@ -105,7 +105,7 @@ $ bundle init
 
 $ bundle install (install dependencies)
 ```
-**Note: You might need to update [database.yml](./config/database.yml) for development and testing environments with necessary username and password for your database in their respective positions.**
+**Note: You might need to update [database.yml](./config/database.yml) for development and testing environments with necessary username and password for your database in their respective positions. Also make sure to comment out _pidfile_ and _workers_ at config/puma.rb to run the server without error.**
 ```
 $ rails db:create
 
