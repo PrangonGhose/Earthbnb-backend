@@ -65,7 +65,9 @@ This web application is built to enable users browser through different houses w
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Live demo is currently unavailable.
+ Live demo is available [here](https://prangonghose.github.io/Earthbnb-frontend/).
+
+ **N.B: As the API is hosted on a free database, it might take a few minutes for loggin in and signing up. Reservation may be faulty due to lag of return status from the API.**
 
 <!-- GETTING STARTED -->
 
