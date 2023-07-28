@@ -67,7 +67,7 @@ This web application is built to enable users browser through different houses w
 
  Live demo is available [here](https://prangonghose.github.io/Earthbnb-frontend/).
 
- **N.B: The backend API is not available due to the restriction on the free account on Render for hosting PostgreSQl databases.**
+ **N.B: The backend API is not available due to the restriction on the free account on Render for hosting PostgreSQl databases. As a result new account registration and viewing of the inner UI is not available in the live demo. Take a look at the UI images below.**
 
 <!-- GETTING STARTED -->
 
